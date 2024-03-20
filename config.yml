@@ -2,12 +2,16 @@ version: 1
 accounts:
 - name: alice
   coins:
-  - 20000token
+  - 20000000FFTT
   - 200000000stake
 - name: bob
   coins:
-  - 10000token
+  - 100000000FFTT
   - 100000000stake
+- name: ftw
+  coins:
+  - 1000000FFTT
+  memons: face prevent rare horn time knife current sniff first about enrich twi
 client:
   openapi:
     path: docs/static/openapi.yml
