@@ -1,0 +1,15 @@
+syntax = "proto3";
+package fttm.fttm;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "fttm/x/fttm/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "fttm/x/fttm/Params";
+  option (gogoproto.equal) = true;
+
+  
+}

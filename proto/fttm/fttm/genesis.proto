@@ -1,0 +1,17 @@
+syntax = "proto3";
+package fttm.fttm;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "fttm/fttm/params.proto";
+
+option go_package = "fttm/x/fttm/types";
+
+// GenesisState defines the fttm module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}
